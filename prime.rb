@@ -1,5 +1,7 @@
 def prime?(integer)
-  array = (1..integer-1).to_a 
+  array = (2..integer-1).to_a 
+  if integer < 2 
+    
   array.each do |num|
     if integer % num != 0 
       return true 
