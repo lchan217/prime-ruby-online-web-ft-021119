@@ -3,12 +3,8 @@ def prime?(integer)
   if integer < 2 
     false 
   else 
-    array.each do |num|
-    if integer % num != 0 
-      return true 
-    else 
-      return false 
+    array.all? do |n|
+      integer % n != 0 
     end 
   end 
-end
 end 
